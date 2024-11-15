@@ -21,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/projects', [App\Http\Controllers\Api\ProjectController::class, 'index']);
 
 Route::get('/projects/{id}', [App\Http\Controllers\Api\ProjectController::class, 'show']);
+
+Route::get('/types', [App\Http\Controllers\Api\TypeController::class, 'index']);
+Route::get('/technologies', [App\Http\Controllers\Api\TechnologyController::class, 'index']);
